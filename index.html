@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" /> <!--El file no existe, se puso unicamente para utilizar la etiqueta-->
+    <title>Tarea de HTML</title>
+</head>
+<body>
+    <div class="header">
+        <picture>
+            <!-- Imagen para pantallas grandes -->
+            <source media="(min-width: 800px)" srcset="images/Pokemon.png" type="image/png">
+    
+            <!-- Imagen para pantallas pequeñas -->
+            <source media="(max-width: 799px)" srcset="images/Pokemon.png" type="image/png">
+    
+            <!-- Imagen por defecto (fallback) -->
+            <img src="images/Pokemon.png" alt="Pokemon" width="200">
+        </picture>
+
+        <h1>Pokemones de tipo <span style="color:red;">Fuego</span>
+    </span>
+        </h1>
+
+        <div>
+            <p>Para buscar un Pokémon rápido de tipo fuego, presiona <kbd>Ctrl</kbd> + <kbd>F</kbd> y escribe su nombre si no es de fuego o no lo encuentras aqui
+            puedes buscarlo en la Pokedex Nacional.</p>
+            <a href="https://www.pokemon.com/es/pokedex" target="blank">Visitar Pokedex</a>
+        </div>
+    </div>
+    
+    <div class="PokemonList">
+        <!--Primer pokemon-->
+        <div class="PokemonCard">
+            <hgroup>
+                <h2>Charmander</h2>
+                <h3>Pokemon de fuego No. 0004</h3>
+            </hgroup>
+
+            <pre>
+                Espanol: Charmander
+                Japones: ヒトカゲ
+            </pre>
+
+            <figure>
+                <img src="images/charmander.png" width="200">
+                <figcaption><b>Charmander</b> La llama de su cola indica su fuerza vital, esta será brillante si está sano.</figcaption>
+            </figure>
+
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Altura: <data value="0.6">0.6 m</data></li>
+                <li>Peso: <data value="8.5">8.5 kg</data></li>
+                <li>Tipo: <data >Lagartija</data></li>
+            </ul>
+
+            <h4>Ataques</h4>
+            <ol>
+                <li><code>Ascuas</code></li>
+                <li><code>Garra de dragon</code></li>
+                <li><code>Lanzallamas</code></li>
+            </ol>
+
+            <details>
+                <summary>Evolucion</summary>
+                Charmander evoluciona en Charmeleon al <mark><em>nivel 16</em></mark>
+            </details>
+        </div>
+
+        <!--Segundo pokemon-->
+        <div class="PokemonCard">
+            <hgroup>
+                <h2>Charmeleon</h2>
+                <h3>Pokemon de fuego No. 0005</h3>
+            </hgroup>
+
+            <pre>
+                Espanol: Charmeleon
+                Japones: リザード
+            </pre>
+
+            <figure>
+                <img src="images/charmeleon.png" width="200">
+                <figcaption><b>Charmeleon</b> Suele usar la cola para derribar a su rival. Cuando lo tira, se vale de sus afiladas garras para acabar con él.</figcaption>
+            </figure>
+        
+
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Altura: <data value="1.1">1.1 m</data></li>
+                <li>Peso: <data value="19.0">19.0 kg</data></li>
+                <li>Tipo: <data >Llama</data></li>
+            </ul>
+
+            <h4>Ataques</h4>
+            <ol>
+                <li><code>Ascuas</code></li>
+                <li><code>Arañazo</code></li> 
+                <li><code>Lanzallamas</code></li>
+            </ol>
+
+            <details>
+                <summary>Evolucion</summary>
+                Charmeleon evoluciona en Charizard al <mark><em>nivel 32</em></mark>
+            </details>
+        </div>
+
+        <!--Tercero pokemon-->
+        <div class="PokemonCard">
+            <hgroup>
+                <h2>Charizard</h2>
+                <h3>Pokemon de fuego No. 0006</h3>
+            </hgroup>
+
+            <pre>
+                Espanol: Charizard
+                Japones: リザードン
+            </pre>
+
+            <figure>
+                <img src="images/charizard.png" width="200">
+                <figcaption><b>Charizard</b> Cuando lanza una descarga de fuego supercaliente, la roja llama de su cola brilla más intensamente.</figcaption>
+            </figure>
+        
+
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Altura: <data value="1.7">1.7 m</data></li>
+                <li>Peso: <data value="90.5">90.5 kg</data></li>
+                <li>Categoria: <data >Llama</data></li>
+            </ul>
+
+            <h4>Ataques</h4>
+            <ol>
+                <li><code>Garra Dragon</code></li>
+                <li><code>Anillo ígneo</code></li>
+                <li><code>Ala de Acero</code></li>
+            </ol>
+
+            <dl>
+                <dt ><span style="color:orange;">Charmander</span></dt>
+                <dd>Evoluciona a Charmeleon al nivel 16</dd>
+                <dt><span style="color:orange;">Charmeleon</span></dt>
+                <dd>Evoluciona a Charizard al nivel 36</dd>
+            </dl>
+
+            <details>
+                <summary>Evolucion</summary>
+                Charizard es la <em>evolucion maxima</em>, evoluciona de charmeleon.
+            </details>
+        </div>
+
+        <!--Cuarto pokemon-->
+        <div class="PokemonCard">
+            <hgroup>
+                <h2>Vulpix</h2>
+                <h3>Pokemon de fuego No. 0037</h3>
+            </hgroup>
+
+            <pre>
+                Espanol: Vulpix
+                Japones: ロコン
+            </pre>
+
+            <figure>
+                <img src="images/vulpix.png" width="200">
+                <figcaption><b>Vulpix</b> Cuando nace solo tiene una cola, pero a medida que crece, esta se va dividiendo desde la punta.</figcaption>
+            </figure>
+        
+
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Altura: <data value="0.6">0.6 m</data></li>
+                <li>Peso: <data value="9.9">9.9 kg</data></li>
+                <li>Tipo: <data >Zorro</data></li>
+            </ul>
+
+            <h4>Ataques</h4>
+            <ol>
+                <li><code>Fuego Fatuo</code></li>
+                <li><code>Rayo Confuso</code></li>
+                <li><code>Lanzallamas</code></li>
+            </ol>
+
+            <details>
+                <summary>Evolucion</summary>
+                Vulpix evoluciona a Ninetales al ser expuesto a una Piedra de Fuego.
+            </details>
+        </div>
+
+        <!--Quinto pokemon-->
+        <div class="PokemonCard">
+            <hgroup>
+                <h2>Moltres</h2>
+                <h3>Pokemon de fuego No. 0146</h3>
+            </hgroup>
+        
+            <pre>
+                Espanol: Moltres
+                Japones: ファイヤー
+            </pre>
+
+            <figure>
+                <img src="images/moltres.png" width="200">
+                <figcaption><b>Moltres</b> Es más conocido como el legendario pájaro de fuego. <br> Con cada aleteo crea brillantes llamas.</figcaption>
+            </figure>
+        
+
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Altura: <data value="2.0">2.0 m</data></li>
+                <li>Peso: <data value="60.0">60.0 kg</data></li>
+                <li>Tipo: <data >Llama</data></li>
+            </ul>
+
+            <h4>Ataques</h4>
+            <ol>
+                <li><code>Ascuas</code></li>
+                <li><code>Giro de Fuego</code></li>
+                <li><code>Onda Ignea</code></li>
+            </ol>
+
+            <details>
+                <summary>Evolucion</summary>
+                Moltres <em>no tiene evolucion</em> ni evoluciona de ningun Pokemon.
+            </details>
+        </div>
+
+        <!--Sexto pokemon-->
+        <div class="PokemonCard">
+            <hgroup>
+                <h2>Flareon</h2>
+                <h3>Pokemon de fuego No. 0136</h3>
+            </hgroup>
+
+            <pre>
+                Espanol: Flareon
+                Japones: ブースター
+            </pre>
+
+            <figure>
+                <img src="images/flareon.png" width="200">
+                <figcaption><b>Flareon</b> Almacena llamas en su cuerpo, que alcanza una temperatura de 900 °C antes de un combate.</figcaption>
+            </figure>
+        
+
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Altura: <data value="0.9">0.9 m</data></li>
+                <li>Peso: <data value="25.0">25.0 kg</data></li>
+                <li>Tipo: <data >Llama</data></li>
+            </ul>
+
+            <h4>Ataques</h4>
+            <ol>
+                <li><code>Llamarada</code></li>
+                <li><code>Onda Ignea</code></li>
+                <li><code>Lanzallamas</code></li>
+            </ol>
+
+            <details>
+                <summary>Evolucion</summary>
+                Flareon evoluciona de Eevee cuando se le expone a una piedra de fuego.
+            </details>
+        </div> 
+
+        <!--Septimo pokemon-->
+        <div class="PokemonCard">
+            <hgroup>
+                <h2>Arcanine</h2>
+                <h3>Pokemon de fuego No. 0059</h3>
+            </hgroup>
+
+            <pre>
+                Espanol: Arcanine
+                Japones: ウインディ
+            </pre>
+
+            <figure>
+                <img src="images/arcanine.png" width="200">
+                <figcaption><b>Arcanine</b> Un Pokémon muy admirado desde la antigüedad por su belleza. <br>Corre ágilmente como si tuviera alas.</figcaption>
+            </figure>
+        
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Altura: <data value="1.9">1.9 m</data></li>
+                <li>Peso: <data value="155.0">155.0 kg</data></li>
+                <li>Tipo: <data >Legendario</data></li>
+            </ul>
+
+            <h4>Ataques</h4>
+            <ol>
+                <li><code>Ascuas</code></li>
+                <li><code>Mordisco</code></li>
+                <li><code>Lanzallamas</code></li>
+            </ol>
+
+            <details>
+                <summary>Evolucion</summary>
+                Arcanine evoluciona de Growlithe al exponerlo a una Piedra Fuego, luego de arcanine <em>no evoluciona</em>.
+            </details>
+        </div>
+    </div>
+
+    <dialog open>
+        <p>Dato importante: Sus debilidades son los pokemones tipo Agua, Tierra y Roca</p>
+    </dialog>
+
+    <div>
+        <h1>Pokedex con los tipo fuego</h1>
+        <p>Puedes ver mas <strong>pokemones de tipo fuego</strong> en la Pokedex que se muestra</p>
+        <iframe src="https://pokemon-project.com/dex/tipo/fuego" width="1200" height="500" title="POKEDEX"></iframe>
+    </div>
+
+    <h5>Datos interesantes de pokemon</h5>
+
+    <p><small>Nota: Los datos son basados del fandom de pokemon</small></p>
+
+    <ol>
+        <li>El <q>primer anime</q> se estreno en <time datetime="1997-04-01">1997</time>.</li>
+         <li>El primer pokemon de fuego en la pokedex es <del>Charmander</del>.</li>
+         <li><i>Charizard</i> aparece en Super Smash Bros.</li>
+         <li>Moltres es muy similar a un ave <ins>Fenix</ins>.</li>
+         <li><b>Charizard</b> puede fundir rocas con su fuego. Su llama alcanza temperaturas cercanas a 10<sup>3</sup> grados, y ni siquiera H<sub>2</sub>O puede apagarla fácilmente.</li>
+         <li>El tipo <abbr title="Fuego">FUE</abbr> es efectivo contra los tipos Acero, Hielo, Bicho y Planta.</li>
+         <li><dfn>Pokémon</dfn>: Criaturas capturadas y entrenadas por entrenadores.</li>
+    </ol>
+
+    <div class="media">
+        <h4>Video sobre el mejor o peor pokemon de fuego de cada generacion</h4>
+        <video width="400" controls>
+            <source src="video/Video_Pokemon.mp4" type="video/mp4">
+            <track src="video/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+            Tu navegador no soporta el video.
+        </video>
+
+        <h4>Audio sobre la intro de Pokemon</h4>
+        <audio controls>
+            <source src="video/introPokemon.m4a" type="audio/mp4">
+            Tu navegador no soporta audio.
+        </audio>
+
+       <h4>Canvas Pokémon</h4>
+        <canvas width="200" height="100" style="border: 1px solid #000;">
+            Tu navegador no soporta canvas.
+        </canvas>
+
+        <h4>SVG Pokémon</h4>
+        <svg width="200" height="200">
+            <!-- Círculo rojo -->
+            <circle cx="100" cy="100" r="50" fill="red" />
+            <!-- Texto -->
+            <text x="80" y="105" fill="white" font-size="16">Fuego</text>
+        </svg>
+    </div>
+
+    <div class="mapa">
+        <h3>Mapa interactivo de la evolucion de charizard</h3>
+
+        <img src="images/charizard.png" alt="Mapa Pokémon" usemap="#mapaFuego">
+
+        <map name="mapaFuego">
+            <area shape="rect" coords="10,10,110,110" href="images/charmander.png" alt="Charmander">
+            <area shape="circle" coords="200,80,40" href="images/charmeleon.png" alt="Charmeleon">
+        </map>
+    </div>
+    
+
+    <div class="footer">
+        <blockquote>
+            "Existen Pokémon salvajes en la hierba alta. Siempre ten a tu Pokémon a tu lado para protegerte."
+            <cite>Pokédex Nacional</cite>
+        </blockquote>
+
+        <div class="perfil" align="right">
+            <img src="images/ash.webp" alt="Avatar" width="150">
+            <h2>Sebastián Castro</h2>
+        </div>
+        
+        <address>
+            Creado por Sebastián Castro - Contacto: 
+            <a href="mailto:cmsebas2006@email.com">cmsebas2006@gmail.com</a>
+        </address>
+    </div>
+</body>
+</html>
